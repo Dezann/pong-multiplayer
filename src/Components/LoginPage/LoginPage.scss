@@ -1,7 +1,38 @@
-.login-page-wrapper{
-    height:100%;
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+@import "../../Global.scss";
+
+.login-page-wrapper {
+    @include flexCenter();
+    height: 100vh;
+    background-color: $primaryColor;
+
+    & > .login-form-wrapper {
+        @include flexCenter();
+        margin-bottom: 10vh;
+        flex-direction: column;
+    }
+}
+
+.game-title {
+    letter-spacing: 2px;
+    font-size: 12vh;
+    margin-bottom: 10vh;
+}
+
+.login-input {
+    font-family: "VT323", monospace;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white 8px;
+    outline: none;
+    text-align: center;
+    font-size: 5vh;
+    letter-spacing: 2px;
+    color: white;
+    width: 20vw;
+}
+
+.login-input::placeholder {
+    color: rgba(255, 255, 255, 0.418);
+    font-size: 5vh;
 }

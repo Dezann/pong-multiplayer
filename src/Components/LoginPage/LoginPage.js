@@ -1,12 +1,18 @@
-import React, { Component } from 'react'
-import "./LoginPage.scss"
+import React, { Component } from "react";
+import "./LoginPage.scss";
 
 class LoginPage extends Component {
-    state = {}
+    state = {};
     render() {
         return (
-            <div class="login-page-wrapper">
-                <input class="login-input"></input>
+            <div className="login-page-wrapper">
+                <div className="login-form-wrapper">
+                    <p className="game-title">Pong Multiplayer</p>
+                    <input
+                        className="login-input"
+                        placeholder="Your nickname"
+                    ></input>
+                </div>
             </div>
         );
     }
